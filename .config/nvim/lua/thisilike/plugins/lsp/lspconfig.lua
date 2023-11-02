@@ -4,7 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
-k  },
+  },
   config = function()
     -- import lspconfig plugin
     local lspconfig = require("lspconfig")
@@ -103,10 +103,10 @@ k  },
     })
 
     -- configure tailwindcss server
-    lspconfig["tailwindcss"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-    })
+    -- lspconfig["tailwindcss"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    -- })
 
     -- configure svelte server
     lspconfig["svelte"].setup({
@@ -139,11 +139,11 @@ k  },
     })
 
     -- configure emmet language server
-    lspconfig["emmet_ls"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
-    })
+    -- lspconfig["emmet_ls"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    --   filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
+    -- })
 
     -- configure python server
     lspconfig["pyright"].setup({

@@ -1,0 +1,10 @@
+[general]
+framerate = 90
+bars = 32
+sensitivity = 100
+mode = "normal"
+
+[output]
+method = "raw"
+bit_format = "8bit"
+channels = "mono"
