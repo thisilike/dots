@@ -27,5 +27,5 @@
 !/.config/neofetch/**
 
 !.zshrc
-!.profile
+!.zprofile
 !.gitconfig
