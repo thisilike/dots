@@ -8,6 +8,7 @@ compinit
 
 
 alias l='ls -lah'
+alias lg='lazygit'
 
 eval "$(starship init zsh)"
 
