@@ -17,7 +17,7 @@
 (defpoll date :interval "1s" "date '+%d/%m %A'")
 (defpoll time :interval "1s" "date '+ %H:%M:%S'")
 
-(deflisten cava :initial "init" "~/cavaf/target/release/cavaf")
+(deflisten cava :initial "init" "~/projects/cavaf/target/release/cavaf -b 32 -f 90")
 
 
 ;; Battery vars
@@ -111,7 +111,7 @@
             :value volume
             :onchange "pamixer --set-volume {}"
     )
-    (label :class "song" :halign "start" :wrap "false" :limit-width 30 :text cava)
+    (label :class "cava" :halign "start" :wrap "false" :limit-width 64 :text cava)
   )
 )
 
@@ -131,7 +131,7 @@
     ))
 
 
-(deflisten workspace "scripts/workspace")
+(deflisten workspace "~/projects/workspaces/target/release/workspaces")
 (defwidget workspaces []
 (literal :content workspace))
 

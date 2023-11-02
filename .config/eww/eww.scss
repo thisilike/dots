@@ -2,10 +2,10 @@
   all: unset; //Unsets everything so you can style everything from scratch
 	//font-family: Inter Nerd Font;
 	// font-family:Space Mono;
+	font-family : FiraCode Nerd Font;
 }
 
 .dockbox {
-	font-family : FiraCode Nerd Font;
 	border-radius: 12px;
 }
 
@@ -60,12 +60,6 @@
 	background: linear-gradient(to right, #212121,#181818,#171717,#181818,#212121);
 }
 
-.song {
-	font-size : 12px;
-	padding:12px;
-	font-weight : bold;
-	padding-left:2px;
-}
 .artist {
 	font-size : 12px;
 	padding-left:2px;
@@ -131,35 +125,52 @@
 .works {
 	font-family:VictorMono Nerd Font;
 	font-weight:bold;
+  margin-left: 1em;
 }
 
 
-// .0, .01, .02, .03, .04, .05, .06,
-// .011, .022, .033, .044, .055, .066{
-//   margin: 0px 0px 0px 0px;
-// }
+.workspace {
+  margin: 0px 0px 0px 0px;
+}
 
-// /* Unoccupied */
-// .0 {
-// 	color: #606060;
-// }
-
-// /* Occupied */
-// .01, .02, .03, .04, .05, .06, .07, .08, .09 {
-// 	color:#959595;
-// }
+/* Unoccupied */
+.void {
+	color: #606060;
+}
 
 
-// /* Focused */
-// .011, .022, .033, .044, .055, .066, .077, .088, .099{
-// 	color: #ffffff;
-// 	font-weight:bold;
-// }
+/* Occupied */
+.inuse {
+	// color:#959595;
+	color: #ffffff;
+  font-weight: lighter;
+}
+
+
+/* Focused */
+.active {
+  color: #8309b8;
+  text-shadow: black 0px 0px 10px, white 0 0 10px;
+	font-weight: bold;
+}
 
 
 .works button:hover {
   color: #000000;
   background-color: #bcbcbc;
+}
+
+.cava {
+  letter-spacing: -1px;
+  // color: #8309b8;
+  // color: white;
+  color: #dbdee9;
+  // text-shadow: white 0px 5px 1px, #a852cd 0px 5px 2px;
+  // text-shadow: /* white 1px -2px 20, */ #a852cd 0px 5px 2px;
+  // color: transparent;
+  // // background-position-y: -0%;
+  // background-image: linear-gradient( black, red, white, green );
+  // background-clip: border-box;
 }
 
 .module {
@@ -222,7 +233,7 @@
 }
 
 .trayicon {
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 	background-size: 24px;
 	min-height: 24px;
 	min-width: 24px;
