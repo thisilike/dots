@@ -6,7 +6,6 @@ export EDITOR=nvim
 autoload -Uz compinit
 compinit
 
-
 alias l='ls -lah'
 alias lg='lazygit'
 
