@@ -6,7 +6,7 @@ export EDITOR=nvim
 autoload -Uz compinit
 compinit
 
-alias l='ls -lah'
+alias l='ls -laht'
 alias lg='lazygit'
 
 eval "$(starship init zsh)"
