@@ -103,13 +103,14 @@ return {
     lspconfig["cssls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      filetypes = {"css", "postcss"},
     })
 
     -- configure tailwindcss server
-    -- lspconfig["tailwindcss"].setup({
-    --   capabilities = capabilities,
-    --   on_attach = on_attach,
-    -- })
+    lspconfig["tailwindcss"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
 
     -- configure svelte server
     lspconfig["svelte"].setup({
