@@ -6,8 +6,10 @@ export EDITOR=nvim
 autoload -Uz compinit
 compinit
 
-alias l='ls -laht'
+alias l='ls -laht --color'
 alias lg='lazygit'
+alias pm='pnpm'
+alias px='pnpx'
 
 eval "$(starship init zsh)"
 
