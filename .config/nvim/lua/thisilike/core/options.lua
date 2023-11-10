@@ -40,3 +40,7 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- change file types
+vim.cmd('autocmd BufNewFile,BufRead docker-compose.yaml set filetype=yaml.docker-compose')
+vim.cmd('autocmd BufNewFile,BufRead docker-compose.yml set filetype=yaml.docker-compose')
