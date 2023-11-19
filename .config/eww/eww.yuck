@@ -36,7 +36,7 @@
 (defvar CALENDAR "images/icons/system/calendar.png")
 
 ;; User
-(defvar IMAGE "images/profile.jpg")
+(defvar IMAGE "images/profile-icon-allucard.jpg")
 (defpoll USER :interval "10m" `whoami`)
 
 ;; Bar
@@ -52,7 +52,7 @@
 
 
 				(audiostuff)
-				(batterystuff)
+				;; (batterystuff)
 
 				(button :onclick "scripts/widget_apps --nm"
 					(box :orientation "h" :spacing 8 :valign "center" :halign "center" :space-evenly "false" :vexpand "false" :hexpand "false"
@@ -75,8 +75,8 @@
 		 :space-evenly false
          :halign "end"
 		 :class "right_modules"
-  ;; (bat_label)
-  ;; (battery_metric)
+  (bat_label)
+  (battery_metric)
 ))
 
 
