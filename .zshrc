@@ -8,8 +8,9 @@ compinit
 
 alias l='ls -laht --color'
 alias lg='lazygit'
-alias pm='pnpm'
-alias px='pnpx'
+alias dcu='docker compose up --build --force-recreate'
+alias dcuu='docker compose up --build --force-recreate --pull always'
+alias dcd='docker compose down'
 
 eval "$(starship init zsh)"
 
