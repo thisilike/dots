@@ -17,5 +17,5 @@ alias dc='docker compose'
 eval "$(starship init zsh)"
 
 # Created by `pipx` on 2023-10-31 18:13:07
-export PATH="$PATH:/home/thisilike/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/go/bin"
 export DATABASE_URL="postgres://root:root@localhost:5432/lastmiledb"
