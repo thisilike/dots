@@ -78,6 +78,13 @@ return {
       cmd={"rust-analyzer"},
       capabilities = capabilities,
       on_attach = on_attach,
+      settings = {
+        ["rust-analyzer"] = {
+          procMacro = {
+            enable = true
+          },
+        }
+      }
       -- settings = {
       --   ['rust_analyzer'] = {
       --     diagnostics = {
@@ -110,6 +117,7 @@ return {
     lspconfig["tailwindcss"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
+      filetypes = {"html, templ"}
     })
 
     lspconfig["docker_compose_language_service"].setup({
@@ -169,6 +177,30 @@ return {
       capabilities = capabilities,
       on_attach = on_attach,
     })
+
+    lspconfig["gopls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    lspconfig["templ"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = {"templ"}
+    })
+
+    lspconfig["html"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = {"templ", "html"}
+    })
+
+    lspconfig["htmx"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      filetypes = {"templ", "html"}
+    })
+
 
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({

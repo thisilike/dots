@@ -1,0 +1,18 @@
+return {
+  {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+    event = { "BufReadPre", "BufNewFile" },
+    build = ":TSUpdate",
+    dependencies = {
+    },
+    config = function()
+      -- import nvim-treesitter plugin
+      local commentstring = require("ts_context_commentstring")
+
+      -- configure treesitter
+      commentstring.setup({ -- enable syntax highlighting
+        enable_autocmd = false,
+      })
+    end,
+  },
+}

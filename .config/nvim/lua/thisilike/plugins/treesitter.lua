@@ -5,6 +5,7 @@ return {
     build = ":TSUpdate",
     dependencies = {
       "windwp/nvim-ts-autotag",
+      "JoosepAlviste/nvim-ts-context-commentstring",
     },
     config = function()
       -- import nvim-treesitter plugin
@@ -39,11 +40,12 @@ return {
           "dockerfile",
           "gitignore",
         },
-        -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
-        context_commentstring = {
-          enable = true,
-          enable_autocmd = false,
-        },
+        -- -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
+        -- skip_ts_context_commentstring_modle = true
+        -- context_commentstring = {
+        --   enable = true,
+        --   enable_autocmd = false,
+        -- },
         -- auto install above language parsers
         auto_install = true,
       })
