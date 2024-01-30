@@ -117,7 +117,7 @@ return {
     lspconfig["tailwindcss"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
-      filetypes = {"html, templ"}
+      filetypes = {"templ", "html"}
     })
 
     lspconfig["docker_compose_language_service"].setup({
