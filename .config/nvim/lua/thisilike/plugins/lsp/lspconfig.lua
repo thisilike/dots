@@ -195,12 +195,11 @@ return {
       filetypes = {"templ", "html"}
     })
 
-    lspconfig["htmx"].setup({
-      capabilities = capabilities,
-      on_attach = on_attach,
-      filetypes = {"templ", "html"}
-    })
-
+    -- lspconfig["htmx"].setup({
+    --   capabilities = capabilities,
+    --   on_attach = on_attach,
+    --   filetypes = {"templ", "html"}
+    -- })
 
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
