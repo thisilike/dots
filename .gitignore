@@ -29,3 +29,6 @@
 !.zshrc
 !.zprofile
 !.gitconfig
+
+!docs/
+!docs/**
