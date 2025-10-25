@@ -16,3 +16,11 @@ Glow is a simple Markdown viewer for the terminal. Amazing for reading documenta
 ## **[Ghostty](https://ghostty.org/)**
 
 Ther Cross-Platform terminal I'm using on mac and linux
+
+## **[svgCrop](https://svgcrop.com/)**
+
+Usefull tools to fix broken viewboxes and remove spacing
+
+## **[image2cpp](https://javl.github.io/image2cpp/)**
+
+Great tool for creating bitmaps
